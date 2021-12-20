@@ -1,4 +1,4 @@
-const recettes = [
+const menu = [
     {
         id: 1,
         title: "Hummos",
@@ -35,7 +35,7 @@ const recettes = [
     {
         id: 5,
         title: "Taboulé",
-        category: "plat",
+        category: "entree",
         img: "https://www.mesinspirationsculinaires.com/wp-content/uploads/2016/03/taboule-libanais-1.jpg",
         desc: "Le taboulé est une salade ou un mets froid à base de persil, de menthe et de boulghour (blé concassé), issue de la cuisine libanaise. Il est le plus souvent servi avec de la laitue romaine, mais peut aussi l'être avec des feuilles de chou blanc ou des feuilles de vigne fraîches.",
   
@@ -50,4 +50,4 @@ const recettes = [
     },
 
   ];
-  export default recettes;
+  export default menu;

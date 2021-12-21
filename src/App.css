@@ -54,6 +54,7 @@ h1 {
 }
 h2 {
   font-size: 2rem;
+  color: hsl(210, 22%, 49%);
 }
 h3 {
   font-size: 1.25rem;

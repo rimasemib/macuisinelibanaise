@@ -2,6 +2,7 @@
 import {useState} from "react";
 import Menu from "./components/Menu";
 import Categories from "./components/Categories";
+import Header from "./components/Header";
 
 import items from "../src/assets/data";
 import './App.css';
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <main>
+      <Header />
       <section className="menu section">        
         <div className="title">
           <h2>Ma Cuisine Libanaise</h2>

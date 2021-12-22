@@ -9,16 +9,18 @@ const Header = () => {
     <div className="headerContainer">
       <div className="menuLeft">
         <div className="imgContainer">
-          <img src= {logo} alt="My Logo" />
+          <Link to="/">
+            <img src= {logo} alt="My Logo" />
+          </Link>
         </div>  
       </div>
       <nav className="menuRight">
         <ul>
           <li className="home">
-            <Link to= "home">Home</Link> 
+            <Link to= "/">Home</Link> 
           </li>
           <li className="about">
-            <Link to= "about">About Ussss</Link> 
+            <Link to= "/about">About Us</Link> 
           </li>   
         </ul>
       </nav>

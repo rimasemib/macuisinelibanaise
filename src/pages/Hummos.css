@@ -1,0 +1,47 @@
+body {
+	text-align: center;
+	background-color: pink;
+}
+.recipe {
+	background-color: white;
+	border-radius: 30px;
+	text-align: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 15px;
+	margin-left: 75px;
+	margin-right: 75px;
+}
+li {
+	margin-left: 50px;
+	margin-top: 5px;
+}
+#ingredients {
+	margin-left: 300px;
+}
+#change {
+	margin-left: 100px;
+}
+#process {
+	margin-left: 325px;
+}
+h1 {
+	font-family: roboto;
+}
+img {
+	border-style: dotted;
+	border-width: 3px;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#finishedrecipelook {
+	height: 300px;
+	width: 300px;
+	text-align: center;
+}
+#finished {
+	text-align: center;
+	font-family: "Roboto Condensed", sans-serif;
+}

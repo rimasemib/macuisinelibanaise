@@ -3,6 +3,7 @@ import {useState} from "react";
 import Menu from "./components/Menu";
 import Categories from "./components/Categories";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 
 import items from "../src/assets/data";
@@ -36,7 +37,9 @@ function App() {
         <Categories categories={categories} filterItems={filterItems} />
         <Menu items={menuItems} />      
       </section>
-    </main>   
+      <Footer />  
+    </main> 
+  
   );
 }
 

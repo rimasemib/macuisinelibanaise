@@ -4,6 +4,8 @@ import Menu from "./components/Menu";
 import Categories from "./components/Categories";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import {Link} from "react-router-dom";
+
 
 
 import items from "../src/assets/data";
@@ -37,6 +39,16 @@ function App() {
         <Categories categories={categories} filterItems={filterItems} />
         <Menu items={menuItems} />      
       </section>
+      <nav className="">
+        <ul>
+          <li className="">
+            <Link to= "/hummos">Hummos</Link> 
+          </li>
+          <li className="">
+            <Link to= "/jjj">tabboul</Link> 
+          </li>   
+        </ul>
+      </nav>
       <Footer />  
     </main> 
   

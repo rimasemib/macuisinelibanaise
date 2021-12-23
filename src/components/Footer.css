@@ -9,6 +9,7 @@
     margin-top: 50px;
     border-radius: 5px;
     border:  #c59d5f 2px solid;
+
   }
   
   .footer .footer-left,
@@ -155,6 +156,7 @@
     color: #ffffff;
 
   }
+
   
   @media (max-width: 767px) {
     .footer {

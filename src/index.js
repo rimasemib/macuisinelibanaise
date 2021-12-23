@@ -4,6 +4,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './App';
+import Hummos from "./pages/Hummos";
 
 import About from "./pages/About";
 
@@ -15,6 +16,7 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="about" element={<About />} />
+        <Route path="hummos" element={<Hummos />} />
       </Routes>  
     </BrowserRouter>
   </React.StrictMode>,

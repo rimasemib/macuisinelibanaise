@@ -1,9 +1,10 @@
-body {
+.body {
 	text-align: center;
-	background-color: pink;
+	background-color: rgb(239, 249, 252);
+	color: #aa7c36;
 }
 .recipe {
-	background-color: white;
+	background-color: #fde6c4;
 	border-radius: 30px;
 	text-align: left;
 	padding-top: 10px;
@@ -15,15 +16,21 @@ body {
 li {
 	margin-left: 50px;
 	margin-top: 5px;
+	color: hsl(210, 22%, 49%);
+
 }
 #ingredients {
 	margin-left: 300px;
+	text-decoration: underline;
+	
 }
+
 #change {
 	margin-left: 100px;
 }
 #process {
 	margin-left: 325px;
+	text-decoration: underline;
 }
 h1 {
 	font-family: roboto;
@@ -44,4 +51,9 @@ img {
 #finished {
 	text-align: center;
 	font-family: "Roboto Condensed", sans-serif;
+}
+figcaption{
+	font-size: larger;
+	font-weight: bolder;
+	font-style: italic;
 }

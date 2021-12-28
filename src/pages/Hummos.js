@@ -14,21 +14,26 @@ const Hummos = () => {
     <div className="myBody">
 	<h1 className="myHead">Pasta with Pesto and Tomatoes</h1>
 
-	<figure>
-		<img className="myImg" src="https://assets.codepen.io/652/shania-pinnata-7E-vKgzahd8-unsplash.jpg" alt="spaghetti with pesto sauce and cherry tomatoes." />
+	<div className="myPic" >
+		<div className="imgContainer1" >
+	
+			<img className="myImg" src="https://assets.codepen.io/652/shania-pinnata-7E-vKgzahd8-unsplash.jpg" alt="spaghetti with pesto sauce and cherry tomatoes." />
+
+		</div>
+	</div>
 
 	
-	</figure>
-
-	<div className="description">
 		<p>This quick and delicious pasta dish is the perfect way to use up a summer bounty of basil and tomatoes! </p>
 		<p>Don't have a green thumb? Never fear! You can knock out this classic pasta dish in no time with a jar of prepared pesto sauce. </p>
-		<figure>
-			<img className="myImg" src="https://assets.codepen.io/652/tamanna-rumee-nswz6tIpgZk-unsplash.jpg" alt="yummy"/>
+		<div className="myPic" >
+			<div className="imgContainer1" >
+	
+				<img className="myImg" src="https://assets.codepen.io/652/tamanna-rumee-nswz6tIpgZk-unsplash.jpg" alt="yummy"/>
 
-		
-		</figure>
+				</div>
 	</div>
+	
+	
 
 	<div className="recipe">
 		<ul>
@@ -71,7 +76,12 @@ const Hummos = () => {
 			<li className="listy">Plate the pasta and add 6-8 tomatoes to each plate</li>
 			<li className="listy">Garnish with reserved basil leaves and Parmesean and serve. <strong>Buon Appetito!</strong></li>
 		</ol>
-		<p className="finished inishedrecipelook">Here is the finished recipe look:<br /><br /><img src="https://www.nospoonnecessary.com/wp-content/uploads/2016/04/Arugula-Pesto-Pasta-671.jpg" alt='too'  /></p>
+		<div className="myPic" >
+			<div className="imgContainer1" >
+	
+		<img src="https://www.nospoonnecessary.com/wp-content/uploads/2016/04/Arugula-Pesto-Pasta-671.jpg" alt='too'  />
+		</div>
+</div>
 	</div>
 </div>
 

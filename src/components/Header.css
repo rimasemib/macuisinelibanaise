@@ -16,7 +16,11 @@
     color: white;
     
   }
-  li {
+  .home {
+    list-style: none;
+    color: white;
+  }
+  .about {
     list-style: none;
     color: white;
   }

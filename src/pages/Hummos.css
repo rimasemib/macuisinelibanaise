@@ -1,68 +1,54 @@
-.myPage {
+.myBody {
+	text-align: center;
+	background-color: pink;
 	margin: 10px;
-	  background-color: rgb(239, 249, 252);
-	  color: #aa7c36;
-  }
-  .myTitle{
-	padding: 10px;
-	text-align: center;
-  }
-  .pictureContainer {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-  }
-  
-  .pictureImg {
-	height: 500px;
-	width: 600px;
-  }
-  .pictureImg img {
-	object-fit: cover;
-	height: 100%;
-	width: 100%;
-  }
-  figcaption{
-   
-	margin: 30px;
-	text-align: center;
-	font-size: larger;
-	  font-weight: bolder;
-	  font-style: italic;
-  }
-  .description{
-	 text-align: center;
-  }
-  .recipe {
-	  background-color: #fde6c4;
-	  border-radius: 30px;
-	  padding: 20px;
-	margin:20px;
-  }
-  li {
+	padding: 5px;
+
+
+}
+.recipe {
+	background-color: white;
+	border-radius: 30px;
+	text-align: left;
+	font-size: 15px;
+}
+.listy {
 	
-	  color: hsl(210, 22%, 49%);
-  }
-  
-  h1 {
-	  font-family: roboto;
-	  text-align: center;
-  }
-  h2 {
-	  font-family: roboto;
-	  text-align: center;
-  }
-  img {
-	  border-style: dotted;
-	  border-width: 3px;
-	  padding: 10px;
-  }
-  .wish{
+	margin: 20px;
+	color: rgb(37, 32, 32);
+	
+}
+.ingredients{
+	text-align: left;
+	font-size: 12px;
+
+}
+.ingredientsy {
+	margin-left: 15px;
+}
+.change {
+	margin-left: 10px;
+}
+.processy {
+	margin-left: 32px;
+}
+.myHead {
+	font-family: roboto;
+}
+.myImg {
+	border-style: dotted;
+	border-width: 3px;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.finishedrecipelook {
+	height: 30px;
+	width: 30px;
 	text-align: center;
-  }
-  
-  
-  
-  
-  
+}
+.finished {
+	text-align: center;
+	font-family: "Roboto Condensed", sans-serif;
+}

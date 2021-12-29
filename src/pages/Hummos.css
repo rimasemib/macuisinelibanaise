@@ -1,14 +1,29 @@
 .myBody {
 	text-align: center;
-	background-color: pink;
+	background-color: #f2e8ce ;
 	margin: 10px;
 	padding: 5px;
 	width: 100%;
 	align-items: center;
 
 }
+.myHead{
+	text-align: center;
+	margin: 10px;
+	padding: 5px;
+	color: hsl(210, 22%, 49%);
+
+}
+.myPar{
+	margin: 10px;
+	padding: 5px;
+	
+}
+p{
+	color: black;
+}
 .recipe {
-	background-color: white;
+	background-color: hsl(210, 36%, 96%);
 	border-radius: 30px;
 	text-align: left;
 	font-size: 15px;
@@ -27,16 +42,22 @@
 .ingredientsy {
 	margin-left: 15px;
 }
+.instructions {
+	margin-left: 15px;
+}
 .change {
 	margin-left: 10px;
+}
+.yummy{
+	text-align: center;
+	margin: 15px;
+	padding: 5px;
+	color: #c59d5f;
 }
 .processy {
 	margin-left: 32px;
 }
-.myHead {
-	font-family: roboto;
-	text-align: center;
-}
+
 .myImg {
 	border-style: dotted;
 	border-width: 3px;
@@ -66,10 +87,15 @@
     width: 600px;
     height: 400px;
     border:  #c59d5f 2px solid;
-    margin-left: 10px;
+    margin: 20px;
   }
   .imgContainer1 img {
     object-fit: cover;
     height: 100%;
     width: 100%;
+  }
+  h2{
+	  text-align: center;
+	  margin: 5px;
+	  padding: 5px;
   }

@@ -1,79 +1,15 @@
 .myBody {
-	text-align: center;
 	background-color: #f2e8ce ;
-	margin: 10px;
-	padding: 5px;
-	width: 100%;
-	align-items: center;
+	margin: 20px;
+	padding: 10px;
 
 }
-.myHead{
+h1{
 	text-align: center;
 	margin: 10px;
 	padding: 5px;
 	color: hsl(210, 22%, 49%);
 
-}
-.myPar{
-	margin: 10px;
-	padding: 5px;
-	
-}
-p{
-	color: black;
-}
-.recipe {
-	background-color: hsl(210, 36%, 96%);
-	border-radius: 30px;
-	text-align: left;
-	font-size: 15px;
-}
-.listy {
-	
-	margin: 20px;
-	color: rgb(37, 32, 32);
-	
-}
-.ingredients{
-	text-align: left;
-	font-size: 12px;
-
-}
-.ingredientsy {
-	margin-left: 15px;
-}
-.instructions {
-	margin-left: 15px;
-}
-.change {
-	margin-left: 10px;
-}
-.yummy{
-	text-align: center;
-	margin: 15px;
-	padding: 5px;
-	color: #c59d5f;
-}
-.processy {
-	margin-left: 32px;
-}
-
-.myImg {
-	border-style: dotted;
-	border-width: 3px;
-	padding-right: 5px;
-	padding-left: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-}
-.finishedrecipelook {
-	height: 30px;
-	width: 30px;
-	text-align: center;
-}
-.finished {
-	text-align: center;
-	font-family: "Roboto Condensed", sans-serif;
 }
 .myPic {
     display: flex;
@@ -94,8 +30,46 @@ p{
     height: 100%;
     width: 100%;
   }
-  h2{
-	  text-align: center;
-	  margin: 5px;
-	  padding: 5px;
-  }
+
+p{
+	color: black;
+	padding: 15px;
+	text-align: center;
+}
+.recipe {
+	background-color: hsl(210, 36%, 96%);
+	border-radius: 30px;
+	text-align: left;
+	font-size: 15px;
+
+}
+.detailsOn{
+	display: flex;
+	justify-content: center;
+}
+.listy {
+	
+	margin: 20px;
+	color: rgb(37, 32, 32);
+
+}
+h2{
+	text-align: center;
+	margin: 5px;
+	padding: 5px;
+}
+.instructions {
+	margin-left: 15px;
+
+}
+
+
+
+.yummy{
+	text-align: center;
+	margin: 15px;
+	padding: 5px;
+	color: #c59d5f;
+}
+
+

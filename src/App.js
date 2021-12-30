@@ -45,8 +45,12 @@ function App() {
             <Link to= "/hummos">Hummos</Link> 
           </li>
           <li className="">
-            <Link to= "/jjj">tabboul</Link> 
-          </li>   
+            <Link to= "/tabbouli">Tabbouli</Link> 
+          </li>  
+          <li className="">
+            <Link to= "/mouhalabia">Mouhalabia</Link> 
+          </li>  
+           
         </ul>
       </nav>
       <Footer />  

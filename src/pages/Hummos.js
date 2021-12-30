@@ -26,7 +26,7 @@ const Hummos = () => {
 				<img className="myImg" src="https://healthyfitnessmeals.com/wp-content/uploads/2020/03/How-to-make-homemade-hummus-7.jpg" alt="purée de pois chiches"/>
 
 			</div>
-	</div>
+		</div>
 	
 	
 

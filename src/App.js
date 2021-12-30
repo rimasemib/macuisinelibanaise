@@ -49,7 +49,17 @@ function App() {
           </li>  
           <li className="">
             <Link to= "/mouhalabia">Mouhalabia</Link> 
-          </li>  
+          </li> 
+          <li className="">
+            <Link to= "/aishElSaraya">Aish El Saraya</Link> 
+          </li> 
+          <li className="">
+            <Link to= "/koussa">Koussa</Link> 
+          </li>
+          <li className="">
+            <Link to= "/loubyi">Loubyi bi Lahmi</Link> 
+          </li>
+           
            
         </ul>
       </nav>

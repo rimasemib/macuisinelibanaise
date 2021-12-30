@@ -7,6 +7,10 @@ import App from './App';
 import Hummos from "./pages/Hummos";
 import Tabbouli from "./pages/Tabbouli";
 import Mouhalabia from "./pages/Mouhalabia";
+import AishElSaraya from "./pages/AishElSaraya";
+import Koussa from "./pages/Koussa";
+import Loubyi from "./pages/Loubyi";
+
 
 import About from "./pages/About";
 
@@ -21,6 +25,10 @@ ReactDOM.render(
         <Route path="hummos" element={<Hummos />} />
         <Route path="tabbouli" element={<Tabbouli />} />
         <Route path="mouhalabia" element={<Mouhalabia />} />
+        <Route path="aishElSaraya" element={<AishElSaraya />} />
+        <Route path="koussa" element={<Koussa />} />
+        <Route path="loubyi" element={<Loubyi />} />
+        
       </Routes>  
     </BrowserRouter>
   </React.StrictMode>,

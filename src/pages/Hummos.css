@@ -43,10 +43,7 @@ p{
 	font-size: 15px;
 
 }
-.detailsOn{
-	display: flex;
-	justify-content: center;
-}
+
 .listy {
 	
 	margin: 20px;
@@ -70,6 +67,12 @@ h2{
 	margin: 15px;
 	padding: 5px;
 	color: #c59d5f;
+}
+@media (max-width: 767px) {
+	.detailsOn{
+		display: flex;
+		justify-content: center;
+	}
 }
 
 

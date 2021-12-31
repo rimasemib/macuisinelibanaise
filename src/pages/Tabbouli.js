@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "./Tabbouli.css";
 
 
 const Tabbouli = () => {
+	const [compteurTbl, setCompteurTbl] = useState(0);
    
   return (
     <div>
@@ -55,6 +56,35 @@ https://cdn.pixabay.com/photo/2020/05/21/08/17/tabbouleh-5199712_960_720.jpg" al
 			</ol>
 
 		</div>
+		<div className="compteurContainer">
+     
+
+        {compteurTbl < 115 ? (
+          <button
+            onClick={() => {
+              setCompteurTbl(compteurTbl + 115);
+			
+            }}
+          >
+            Combien de calories dans 100 g de Tabbouli?&nbsp;&nbsp;&nbsp;
+          </button>
+        ) : null}
+		
+
+        <span className="calories"> &nbsp;&nbsp;&nbsp;{compteurTbl} </span>
+		<span className="calories">&nbsp;&nbsp;&nbsp;kcal/100 g&nbsp;&nbsp;&nbsp;</span>
+
+        {compteurTbl > 0 ? (
+          <button
+            onClick={() => {
+              setCompteurTbl(compteurTbl - 115);
+            }}
+          >
+            reset
+          </button>
+        ) : // comment
+        null}
+	</div>
 		<div className="recipe">
 			<h2>Instructions</h2>
 			<ol className="instructions">

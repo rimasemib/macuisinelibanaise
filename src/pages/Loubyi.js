@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "./Loubyi.css";
 
 
 const Loubyi = () => {
+	const [compteurLoubyi, setCompteurLoubyi] = useState(0);
    
   return (
     <div>
@@ -52,6 +53,35 @@ const Loubyi = () => {
             </ol>
 
 		</div>
+		<div className="compteurContainer">
+     
+
+        {compteurLoubyi < 194 ? (
+          <button
+            onClick={() => {
+              setCompteurLoubyi(compteurLoubyi + 194);
+			
+            }}
+          >
+            Combien de calories dans 100 g de Loubyi?&nbsp;&nbsp;&nbsp;
+          </button>
+        ) : null}
+		
+
+        <span className="calories"> &nbsp;&nbsp;&nbsp;{compteurLoubyi} </span>
+		<span className="calories">&nbsp;&nbsp;&nbsp;kcal/100 g&nbsp;&nbsp;&nbsp;</span>
+
+        {compteurLoubyi > 0 ? (
+          <button
+            onClick={() => {
+              setCompteurLoubyi(compteurLoubyi - 194);
+            }}
+          >
+            reset
+          </button>
+        ) : // comment
+        null}
+	</div>
 		<div className="recipe">
 			<h2>Instructions</h2>
 			<ol className="instructions">

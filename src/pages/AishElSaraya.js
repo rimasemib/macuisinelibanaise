@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "./AishElSaraya.css";
 
 
 const AishElSaraya = () => {
+	const [compteurSaraya, setCompteurSaraya] = useState(0);
    
   return (
     <div>
@@ -55,6 +56,36 @@ const AishElSaraya = () => {
 			</ol>
 
 		</div>
+		<div className="compteurContainer">
+     
+
+        {compteurSaraya < 445 ? (
+          <button
+            onClick={() => {
+              setCompteurSaraya(compteurSaraya + 445);
+			
+            }}
+          >
+            Combien de calories dans 100 g de Aish El Saraya?&nbsp;&nbsp;&nbsp;
+          </button>
+        ) : null}
+		
+
+        <span className="calories"> &nbsp;&nbsp;&nbsp;{compteurSaraya} </span>
+		<span className="calories">&nbsp;&nbsp;&nbsp;kcal/100 g&nbsp;&nbsp;&nbsp;</span>
+
+        {compteurSaraya > 0 ? (
+          <button
+            onClick={() => {
+              setCompteurSaraya(compteurSaraya - 445);
+            }}
+          >
+            reset
+          </button>
+        ) : // comment
+        null}
+	</div>
+
 		<div className="recipe">
 			<h2>Instructions</h2>
 			<ol className="instructions">

@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "./Mouhalabia.css";
 
 
 const Mouhalabia = () => {
+	const [compteurMouh, setCompteurMouh] = useState(0);
    
   return (
     <div>
@@ -49,6 +50,35 @@ const Mouhalabia = () => {
             </ol>
 
 		</div>
+		<div className="compteurContainer">
+     
+
+        {compteurMouh < 100 ? (
+          <button
+            onClick={() => {
+              setCompteurMouh(compteurMouh + 100);
+			
+            }}
+          >
+            Combien de calories dans 100 g de Mouhalabiya?&nbsp;&nbsp;&nbsp;
+          </button>
+        ) : null}
+		
+
+        <span className="calories"> &nbsp;&nbsp;&nbsp;{compteurMouh} </span>
+		<span className="calories">&nbsp;&nbsp;&nbsp;kcal/100 g&nbsp;&nbsp;&nbsp;</span>
+
+        {compteurMouh > 0 ? (
+          <button
+            onClick={() => {
+              setCompteurMouh(compteurMouh - 100);
+            }}
+          >
+            reset
+          </button>
+        ) : // comment
+        null}
+	</div>
 		<div className="recipe">
 			<h2>Instructions</h2>
 			<ol className="instructions">

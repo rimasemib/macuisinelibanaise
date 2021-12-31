@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "./Hummos.css";
 
 
 const Hummos = () => {
+	const [compteurHms, setCompteurHms] = useState(0);
    
   return (
     <div>
@@ -51,6 +52,36 @@ const Hummos = () => {
 			</ol>
 
 		</div>
+		<div className="compteurContainer">
+     
+
+        {compteurHms < 145 ? (
+          <button
+            onClick={() => {
+              setCompteurHms(compteurHms + 145);
+			
+            }}
+          >
+            Combien de calories dans 100 g de Hummos?&nbsp;&nbsp;&nbsp;
+          </button>
+        ) : null}
+		
+
+        <span className="calories"> &nbsp;&nbsp;&nbsp;{compteurHms} </span>
+		<span className="calories">&nbsp;&nbsp;&nbsp;kcal/100 g&nbsp;&nbsp;&nbsp;</span>
+
+        {compteurHms > 0 ? (
+          <button
+            onClick={() => {
+              setCompteurHms(compteurHms - 145);
+            }}
+          >
+            reset
+          </button>
+        ) : // comment
+        null}
+	</div>
+
 		<div className="recipe">
 			<h2>Instructions</h2>
 			<ol className="instructions">

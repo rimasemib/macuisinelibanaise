@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "./Koussa.css";
 
 
 const Koussa = () => {
+	const [compteurKoussa, setCompteurKoussa] = useState(0);
    
   return (
     <div>
@@ -62,6 +63,35 @@ const Koussa = () => {
 			</ol>
 
 		</div>
+		<div className="compteurContainer">
+     
+
+        {compteurKoussa < 54 ? (
+          <button
+            onClick={() => {
+              setCompteurKoussa(compteurKoussa + 54);
+			
+            }}
+          >
+            Combien de calories dans 100 g de Koussa?&nbsp;&nbsp;&nbsp;
+          </button>
+        ) : null}
+		
+
+        <span className="calories"> &nbsp;&nbsp;&nbsp;{compteurKoussa} </span>
+		<span className="calories">&nbsp;&nbsp;&nbsp;kcal/100 g&nbsp;&nbsp;&nbsp;</span>
+
+        {compteurKoussa > 0 ? (
+          <button
+            onClick={() => {
+              setCompteurKoussa(compteurKoussa - 54);
+            }}
+          >
+            reset
+          </button>
+        ) : // comment
+        null}
+	</div>
 		<div className="recipe">
 			<h2>Instructions</h2>
 			<ol className="instructions">

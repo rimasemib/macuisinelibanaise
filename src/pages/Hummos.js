@@ -31,7 +31,7 @@ const Hummos = () => {
 	
 
 		<div className="recipe">
-			<ul className="detailsOn">
+			<ul className="instructions">
 				<li className="listy">Portions: 4 personnes</li>
 				<li className="listy">Temps de préparation:15 minutes</li>
 				<li className="listy">Temps de cuisson:15 minutes</li>

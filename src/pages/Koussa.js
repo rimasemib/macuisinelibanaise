@@ -67,7 +67,7 @@ const Koussa = () => {
      
 
         {compteurKoussa < 54 ? (
-          <button
+          <button className="btnKous"
             onClick={() => {
               setCompteurKoussa(compteurKoussa + 54);
 			
@@ -82,7 +82,7 @@ const Koussa = () => {
 		<span className="calories">&nbsp;&nbsp;&nbsp;kcal/100 g&nbsp;&nbsp;&nbsp;</span>
 
         {compteurKoussa > 0 ? (
-          <button
+          <button className="btnKous"
             onClick={() => {
               setCompteurKoussa(compteurKoussa - 54);
             }}

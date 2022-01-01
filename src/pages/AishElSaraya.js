@@ -60,7 +60,7 @@ const AishElSaraya = () => {
      
 
         {compteurSaraya < 445 ? (
-          <button
+          <button className="btnAish"
             onClick={() => {
               setCompteurSaraya(compteurSaraya + 445);
 			
@@ -75,7 +75,7 @@ const AishElSaraya = () => {
 		<span className="calories">&nbsp;&nbsp;&nbsp;kcal/100 g&nbsp;&nbsp;&nbsp;</span>
 
         {compteurSaraya > 0 ? (
-          <button
+          <button className="btnAish"
             onClick={() => {
               setCompteurSaraya(compteurSaraya - 445);
             }}

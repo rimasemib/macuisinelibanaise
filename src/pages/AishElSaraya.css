@@ -79,7 +79,20 @@ h2{
 
   }
   .calories{
-	  text-decoration: none;
+	text-decoration: none;
+	color: hsl(210, 22%, 49%);
+	font-size: medium;
+	font-weight: bold;
+  }
+  .btnAish{
+
+	color: hsl(210, 22%, 49%);
+    background-color: #e0bb6d;
+    font-size: 1.2em;
+	padding: 3px;
+	height: 50px;
+	border-radius: 10px;	
+
   }
 
 

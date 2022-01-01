@@ -56,7 +56,7 @@ const Hummos = () => {
      
 
         {compteurHms < 145 ? (
-          <button
+          <button className="btnHms"
             onClick={() => {
               setCompteurHms(compteurHms + 145);
 			
@@ -71,7 +71,7 @@ const Hummos = () => {
 		<span className="calories">&nbsp;&nbsp;&nbsp;kcal/100 g&nbsp;&nbsp;&nbsp;</span>
 
         {compteurHms > 0 ? (
-          <button
+          <button className= "btnHms"
             onClick={() => {
               setCompteurHms(compteurHms - 145);
             }}

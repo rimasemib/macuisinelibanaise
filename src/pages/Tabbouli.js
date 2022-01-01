@@ -60,7 +60,7 @@ https://cdn.pixabay.com/photo/2020/05/21/08/17/tabbouleh-5199712_960_720.jpg" al
      
 
         {compteurTbl < 115 ? (
-          <button
+          <button className="btnTab"
             onClick={() => {
               setCompteurTbl(compteurTbl + 115);
 			
@@ -75,7 +75,7 @@ https://cdn.pixabay.com/photo/2020/05/21/08/17/tabbouleh-5199712_960_720.jpg" al
 		<span className="calories">&nbsp;&nbsp;&nbsp;kcal/100 g&nbsp;&nbsp;&nbsp;</span>
 
         {compteurTbl > 0 ? (
-          <button
+          <button className="btnTab"
             onClick={() => {
               setCompteurTbl(compteurTbl - 115);
             }}

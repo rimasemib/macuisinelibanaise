@@ -54,7 +54,7 @@ const Mouhalabia = () => {
      
 
         {compteurMouh < 100 ? (
-          <button
+          <button className="btnMouh"
             onClick={() => {
               setCompteurMouh(compteurMouh + 100);
 			
@@ -69,7 +69,7 @@ const Mouhalabia = () => {
 		<span className="calories">&nbsp;&nbsp;&nbsp;kcal/100 g&nbsp;&nbsp;&nbsp;</span>
 
         {compteurMouh > 0 ? (
-          <button
+          <button className="btnMouh"
             onClick={() => {
               setCompteurMouh(compteurMouh - 100);
             }}

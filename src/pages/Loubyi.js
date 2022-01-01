@@ -57,7 +57,7 @@ const Loubyi = () => {
      
 
         {compteurLoubyi < 194 ? (
-          <button
+          <button className="btnLoub"
             onClick={() => {
               setCompteurLoubyi(compteurLoubyi + 194);
 			
@@ -72,7 +72,7 @@ const Loubyi = () => {
 		<span className="calories">&nbsp;&nbsp;&nbsp;kcal/100 g&nbsp;&nbsp;&nbsp;</span>
 
         {compteurLoubyi > 0 ? (
-          <button
+          <button className="btnLoub"
             onClick={() => {
               setCompteurLoubyi(compteurLoubyi - 194);
             }}

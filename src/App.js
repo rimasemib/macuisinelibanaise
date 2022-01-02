@@ -11,7 +11,7 @@ import {Link} from "react-router-dom";
 import items from "../src/assets/data";
 import './App.css';
 
-const allCategories = ['all', ...new Set (items.map((item) => item.category))];
+const allCategories = ['Toutes Les Recettes', ...new Set (items.map((item) => item.category))];
 console.log(allCategories);
 
 function App() {

@@ -102,8 +102,9 @@ const Tabbouli = () => {
 		<div className="myPic" >
 			<div className="imgContainer1" >
 	
-				<img src="https://media.istockphoto.com/photos/raw-ingredients-cooking-salad-tabouli-healthy-food-picture-id1142801070" alt='Done'  />
+				<img src="https://foodieallin.com/wp-content/gallery/lgfoodprint/cache/LGfoodprint-1-6.jpg-nggid041216-ngg0dyn-0x0x100-00f0w010c010r110f110r010t010.jpg" alt='Done'/>
 			</div>
+			
 		</div>
 	
 </div>

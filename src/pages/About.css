@@ -8,8 +8,8 @@
 .square {
   text-align: left;
   padding: 15px;
-  width:1200px;
-  height: 1000px;
+  width:800px;
+  height: 800px;
   padding-top: 40px;
   margin-bottom: 30px;
   margin-top: 30px;
@@ -18,7 +18,7 @@
   margin-right: 15px;
   background-color: #FBF7F0;
   color: 	#8B4513;
-  font-size: 28px;
+  font-size: 18px;
 
  
 }

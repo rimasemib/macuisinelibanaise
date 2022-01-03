@@ -4,10 +4,6 @@ import Menu from "./components/Menu";
 import Categories from "./components/Categories";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import {Link} from "react-router-dom";
-
-
-
 import items from "../src/assets/data";
 import './App.css';
 
@@ -16,7 +12,7 @@ console.log(allCategories);
 
 function App() {
   const [menuItems, setMenuItems] = useState(items);
-  const [categories, setCategories] = useState(allCategories);
+  const [categories] = useState(allCategories);
 
   const filterItems = (category) => {
     if (category === 'all'){
@@ -32,7 +28,7 @@ function App() {
       <Header />
       <section className="menu section">        
         <div className="title">
-          <h2>Ma Cuisine Libanaise</h2>
+          <h2 className="cuisTit">Ma Cuisine Libanaise</h2>
           <div className="underline"></div>
 
         </div>

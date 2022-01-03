@@ -1,14 +1,15 @@
 .boxes {
   display: flex;
   justify-content: center;
+ 
 
  
 }
 .square {
   text-align: left;
   padding: 15px;
-  width:700px;
-  height: 500px;
+  width:1200px;
+  height: 1000px;
   padding-top: 40px;
   line-height: 20px;
   margin-bottom: 30px;
@@ -16,7 +17,10 @@
   box-sizing: border-box;
   margin-left: 15px;
   margin-right: 15px;
-  text-align: center;
+  background-color: #FBF7F0;
+  color: 	#8B4513;
+
+ 
 }
 
 .shadow-5 {
@@ -26,5 +30,10 @@
               0 8px 8px rgba(0,0,0,0.12),
               0 16px 16px rgba(0,0,0,0.12);
 }
+.aboutTit{
+  text-decoration: underline;
+  color: 	#8B4513;
+}
+
 
 

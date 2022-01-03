@@ -11,7 +11,6 @@
   width:1200px;
   height: 1000px;
   padding-top: 40px;
-  line-height: 20px;
   margin-bottom: 30px;
   margin-top: 30px;
   box-sizing: border-box;
@@ -19,6 +18,7 @@
   margin-right: 15px;
   background-color: #FBF7F0;
   color: 	#8B4513;
+  font-size: 28px;
 
  
 }

@@ -16,8 +16,7 @@ const Tabbouli = () => {
 		<h1>Tabbouli (Salade Libanaise)</h1>
 		<div className="myPic" >
 			<div className="imgContainer1" >
-				<img src="
-https://cdn.pixabay.com/photo/2020/05/22/01/52/food-5203382_960_720.jpg" alt="Salade Libanaise" />
+				<img src="https://cdn.pixabay.com/photo/2020/05/22/01/52/food-5203382_960_720.jpg" alt="Salade Libanaise" />
 			</div>
 		</div>
 		<p>A la base, simple salade de boulghour assaisonnée au citron et à l’huile d’olive et agrémentée de quelques herbes du jardin, le taboulé s’est petit à petit enrichi d’une grande quantité de persil et de menthe, puis de tomates, pour devenir LA salade libanaise par excellence appréciée de tous et associée aux pique-niques, fêtes et réceptions. Elle reste d’une fraîcheur incomparable par grande chaleur.</p>
@@ -25,8 +24,7 @@ https://cdn.pixabay.com/photo/2020/05/22/01/52/food-5203382_960_720.jpg" alt="Sa
 		<div className="myPic" >
 			<div className="imgContainer1" >
 	
-				<img className="myImg" src="
-https://cdn.pixabay.com/photo/2020/05/21/08/17/tabbouleh-5199712_960_720.jpg" alt="Tabbouli Libanaise"/>
+				<img className="myImg" src="https://cdn.pixabay.com/photo/2020/05/21/08/17/tabbouleh-5199712_960_720.jpg" alt="Tabbouli Libanaise"/>
 
 			</div>
 	</div>

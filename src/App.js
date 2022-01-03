@@ -11,7 +11,7 @@ import {Link} from "react-router-dom";
 import items from "../src/assets/data";
 import './App.css';
 
-const allCategories = ['Toutes Les Recettes', ...new Set (items.map((item) => item.category))];
+const allCategories = ['all', ...new Set (items.map((item) => item.category))];
 console.log(allCategories);
 
 function App() {
@@ -39,30 +39,7 @@ function App() {
         <Categories categories={categories} filterItems={filterItems} />
         <Menu items={menuItems} />      
       </section>
-      <nav className="">
-        <ul>
-          <li className="">
-            <Link to= "/hummos">Hummos</Link> 
-          </li>
-          <li className="">
-            <Link to= "/tabbouli">Tabbouli</Link> 
-          </li>  
-          <li className="">
-            <Link to= "/mouhalabia">Mouhalabia</Link> 
-          </li> 
-          <li className="">
-            <Link to= "/aishElSaraya">Aish El Saraya</Link> 
-          </li> 
-          <li className="">
-            <Link to= "/koussa">Koussa</Link> 
-          </li>
-          <li className="">
-            <Link to= "/loubyi">Loubyi bi Lahmi</Link> 
-          </li>
-           
-           
-        </ul>
-      </nav>
+      
       <Footer />  
     </main> 
   

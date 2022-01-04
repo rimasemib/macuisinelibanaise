@@ -32,7 +32,7 @@ const Hummos = () => {
 	
 
 		<div className="recipe">
-			<ul className="detailsOn">
+			<ul className="instructions">
 				<li className="listy">Portions: 4 personnes</li>
 				<li className="listy">Temps de préparation:15 minutes</li>
 				<li className="listy">Temps de cuisson:15 minutes</li>
@@ -41,7 +41,7 @@ const Hummos = () => {
 		</div>
 		<div className="recipe">
 			<h2>Les Ingrédients</h2>
-			<ol className="instructions" type='i'>
+			<ul className="instructions">
 				<li className="listy">200 g de pois chiches sec</li>
 				<li className="listy">100 g de Tahini(Crème de sesame)</li>
 				<li className="listy">1 citron(s)</li>
@@ -49,7 +49,7 @@ const Hummos = () => {
 				<li className="listy">2 pincées de bicarbonate de soude alimentaire</li>
 				<li className="listy">huile d'olive</li>
 			
-			</ol>
+			</ul>
 
 		</div>
 		<div className="compteurContainer">

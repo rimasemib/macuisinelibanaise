@@ -32,7 +32,7 @@ const AishElSaraya = () => {
 	
 
 		<div className="recipe">
-			<ul className="detailsOn">
+			<ul className="instructions">
 				<li className="listy">Portions: 10 personnes</li>
 				<li className="listy">Temps de préparation:15 minutes</li>
 				<li className="listy">Temps de cuisson:15 minutes</li>
@@ -41,7 +41,7 @@ const AishElSaraya = () => {
 		</div>
 		<div className="recipe">
 			<h2>Les Ingrédients</h2>
-			<ol className="instructions" type='i'>
+			<ul className="instructions">
 				<li className="listy">2 verres d'eau</li>
 				<li className="listy">1 verre de sucre</li>
 				<li className="listy">2 cas a soupe d'eau de rose</li>
@@ -53,7 +53,7 @@ const AishElSaraya = () => {
                 <li className="listy">1 sachet de sucre vanillé</li>
                 <li className="listy">Pistache concassées ou noix de coco</li>
 			
-			</ol>
+			</ul>
 
 		</div>
 		<div className="compteurContainer">

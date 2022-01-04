@@ -32,7 +32,7 @@ const Loubyi = () => {
 	
 
 		<div className="recipe">
-			<ul className="detailsOn">
+			<ul className="instructions">
 				<li className="listy">Portions: 4 personnes</li>
 				<li className="listy">Temps de préparation:20 minutes</li>
 				<li className="listy">Temps de cuisson:30 minutes</li>
@@ -41,7 +41,7 @@ const Loubyi = () => {
 		</div>
 		<div className="recipe">
 			<h2>Les Ingrédients</h2>
-			<ol className="instructions" type='i'>
+			<ul className="instructions">
 				<li className="listy">Environ 500 g de haricots verts frais</li>
 				<li className="listy">300 g de cubes de bœuf</li>
 				<li className="listy">1 oignon moyen haché</li>
@@ -50,7 +50,7 @@ const Loubyi = () => {
 				<li className="listy">5-6 tasses d’eau</li>
                 <li className="listy">5 c. s. d’huile végétale</li>
                 <li className="listy">Sel et poivre</li>
-            </ol>
+            </ul>
 
 		</div>
 		<div className="compteurContainer">

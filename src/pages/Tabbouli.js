@@ -32,7 +32,7 @@ const Tabbouli = () => {
 	
 
 		<div className="recipe">
-			<ul className="detailsOn">
+			<ul className="instructions">
 				<li className="listy">Portions: 5 personnes</li>
 				<li className="listy">Préparation des légumes:20 minutes</li>
 				<li className="listy">Mélanger avec les autres ingrédients:5 minutes</li>
@@ -41,7 +41,7 @@ const Tabbouli = () => {
 		</div>
 		<div className="recipe">
 			<h2>Les Ingrédients</h2>
-			<ol className="instructions" type='i'>
+			<ul className="instructions">
 				<li className="listy">4 tomates fermes</li>
 				<li className="listy">2 bottes de persil plat</li>
 				<li className="listy">1 citron(s)</li>
@@ -51,7 +51,7 @@ const Tabbouli = () => {
                 <li className="listy">1 botte de menthe fraîche</li>
                 <li className="listy">1 petite poignée de boulgour brun moyen (blé concassé)</li>
 			
-			</ol>
+			</ul>
 
 		</div>
 		<div className="compteurContainer">

@@ -3,6 +3,7 @@
 	background-color: #f2e8ce ;
 	padding: 10px;
 	border-radius: 28px;
+	margin: 20px;
 }
 h1{
 	text-align: center;
@@ -43,10 +44,7 @@ p{
 	font-size: 15px;
 
 }
-.detailsOn{
-	display: flex;
-	justify-content: center;
-}
+
 
 .listy {
 	
@@ -63,9 +61,9 @@ h2{
 	margin-left: 15px;
 
 }
-
-
-
+ul{
+	list-style: circle;
+}
 .yummy{
 	text-align: center;
 	margin: 15px;

@@ -2,6 +2,7 @@
 	background-color: #f2e8ce ;
 	margin: 20px;
 	padding: 10px;
+	border-radius: 28px;
 
 
 }
@@ -44,10 +45,7 @@ p{
 	font-size: 15px;
 
 }
-.detailsOn{
-	display: flex;
-	justify-content: center;
-}
+
 .listy {
 	
 	margin: 20px;
@@ -62,6 +60,9 @@ h2{
 .instructions {
 	margin-left: 15px;
 
+}
+ul{
+	list-style: circle;
 }
 
 

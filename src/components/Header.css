@@ -7,10 +7,10 @@
     height: 200px;
     border-radius: 5px;
     border:  #c59d5f 2px solid;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 
   }
-  ul {
+  .myunlist{
     display: flex;
     gap: 60px;
     margin: 10px;

@@ -33,7 +33,7 @@ const Koussa = () => {
 	
 
 		<div className="recipe">
-			<ul className="detailsOn">
+			<ul className="instructions">
 				<li className="listy">Portions: 4 personnes</li>
 				<li className="listy">Temps de préparation:60 minutes</li>
 				<li className="listy">Temps de cuisson:30 minutes</li>
@@ -42,7 +42,7 @@ const Koussa = () => {
 		</div>
 		<div className="recipe">
 			<h2>Les Ingrédients</h2>
-			<ol className="instructions" type='i'>
+			<ul className="instructions">
 				<li className="listy">500g Jeunes petites courgettes.</li>
 				<li className="listy">150g Bœuf haché</li>
 				<li className="listy">1/4 càc 7 épices labanais</li>
@@ -60,7 +60,7 @@ const Koussa = () => {
                 <li className="listy">2 càs Huile d'olive</li>
                 <li className="listy">Sel, poivre</li>
 			
-			</ol>
+			</ul>
 
 		</div>
 		<div className="compteurContainer">

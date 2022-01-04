@@ -32,7 +32,7 @@ const Mouhalabia = () => {
 	
 
 		<div className="recipe">
-			<ul className="detailsOn">
+			<ul className="instructions">
 				<li className="listy">Portions: 4 personnes</li>
 				<li className="listy">Temps de préparation:10 minutes</li>
 				<li className="listy">Temps de cuisson:15 minutes</li>
@@ -41,13 +41,13 @@ const Mouhalabia = () => {
 		</div>
 		<div className="recipe">
 			<h2>Les Ingrédients</h2>
-			<ol className="instructions" type='i'>
+			<ul className="instructions">
 				<li className="listy">50 cl de lait</li>
 				<li className="listy">100 g de sucre</li>
 				<li className="listy">40 g de fécule de maïs</li>
 				<li className="listy">30 g de pistaches</li>
 				<li className="listy">6 cl d'eau de fleur d'oranger</li>
-            </ol>
+            </ul>
 
 		</div>
 		<div className="compteurContainer">

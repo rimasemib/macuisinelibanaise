@@ -6,6 +6,7 @@ import "./Hummos.css";
 
 const Hummos = () => {
 	const [compteurHms, setCompteurHms] = useState(0);
+	const [multiplePer, setMultiplePer] = useState(1);
    
   return (
     <div>
@@ -39,14 +40,45 @@ const Hummos = () => {
 				<li className="listy">Temps total:30 minutes</li>
 			</ul>
 		</div>
+
+		<div className="compteur22">
+		 
+				<button className="btnHms"
+				onClick={() => {
+					setMultiplePer(1);
+		 
+		 		}}
+	   		>
+		 		4 Personnes
+	   		</button>
+			   
+			<button className="btnHms"
+				onClick={() => {
+					setMultiplePer(2);
+		 
+		 		}}
+	   		>
+		 		8 Personnes
+	   		</button>
+			   
+			<button className="btnHms"
+				onClick={() => {
+					setMultiplePer(3);
+		 
+		 		}}
+	   		>
+		 		12 Personnes
+	   		</button>
+	 	
+		</div>
 		<div className="recipe">
 			<h2>Les Ingrédients</h2>
 			<ul className="instructions">
-				<li className="listy">200 g de pois chiches sec</li>
-				<li className="listy">100 g de Tahini(Crème de sesame)</li>
-				<li className="listy">1 citron(s)</li>
-				<li className="listy">2 gousses d' ail</li>
-				<li className="listy">2 pincées de bicarbonate de soude alimentaire</li>
+				<li className="listy">{multiplePer * 200} g de pois chiches sec</li>
+				<li className="listy">{multiplePer * 100} g de Tahini(Crème de sesame)</li>
+				<li className="listy">{multiplePer * 1} citron(s)</li>
+				<li className="listy">{multiplePer * 2} gousses d' ail</li>
+				<li className="listy">{multiplePer * 2} pincées de bicarbonate de soude alimentaire</li>
 				<li className="listy">huile d'olive</li>
 			
 			</ul>

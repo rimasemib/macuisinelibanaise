@@ -6,6 +6,7 @@ import "./Koussa.css";
 
 const Koussa = () => {
 	const [compteurKoussa, setCompteurKoussa] = useState(0);
+	const [multiplePer, setMultiplePer] = useState(1);
    
   return (
     <div>
@@ -40,24 +41,54 @@ const Koussa = () => {
 				<li className="listy">Temps total:90 minutes</li>
 			</ul>
 		</div>
+		<div className="compteur22">
+		 
+				<button className="btnHms"
+				onClick={() => {
+					setMultiplePer(1);
+		 
+		 		}}
+	   		>
+		 		4 Personnes
+	   		</button>
+			   
+			<button className="btnHms"
+				onClick={() => {
+					setMultiplePer(2);
+		 
+		 		}}
+	   		>
+		 		8 Personnes
+	   		</button>
+			   
+			<button className="btnHms"
+				onClick={() => {
+					setMultiplePer(3);
+		 
+		 		}}
+	   		>
+		 		12 Personnes
+	   		</button>
+	 	
+		</div>
 		<div className="recipe">
 			<h2>Les Ingrédients</h2>
 			<ul className="instructions">
-				<li className="listy">500g Jeunes petites courgettes.</li>
-				<li className="listy">150g Bœuf haché</li>
-				<li className="listy">1/4 càc 7 épices labanais</li>
-				<li className="listy">80g Riz cassé en deux fois</li>
-				<li className="listy">2 càs Huile neutre</li>
+				<li className="listy">{multiplePer * 500} g Jeunes petites courgettes.</li>
+				<li className="listy">{multiplePer * 150} g Bœuf haché</li>
+				<li className="listy"> {multiplePer * 1/4} càc 7 épices labanais</li>
+				<li className="listy">{multiplePer * 80} g Riz cassé en deux fois</li>
+				<li className="listy">{multiplePer * 2} càs Huile neutre</li>
 				<li className="listy">Sel, poivre</li>
-                <li className="listy">1 càs Mélasse de grenade</li>
+                <li className="listy">{multiplePer * 1} càs Mélasse de grenade</li>
                 <span>Pour La Sauce:</span>
-                <li className="listy">40 ml Mélasse de grenade</li>
-                <li className="listy">1 càs menthe séchée</li>
-                <li className="listy">150g Sauce de tomate</li>
-                <li className="listy">3 Gousses d'ail</li>
-                <li className="listy">1/2 càc 7 épices labanais</li>
-                <li className="listy">30 cl Eau</li>
-                <li className="listy">2 càs Huile d'olive</li>
+                <li className="listy">{multiplePer * 40} ml Mélasse de grenade</li>
+                <li className="listy">{multiplePer * 1} càs menthe séchée</li>
+                <li className="listy">{multiplePer * 150} g Sauce de tomate</li>
+                <li className="listy">{multiplePer * 3} Gousses d'ail</li>
+                <li className="listy">{multiplePer * 1/2} càc 7 épices labanais</li>
+                <li className="listy">{multiplePer * 30} cl Eau</li>
+                <li className="listy">{multiplePer * 2} càs Huile d'olive</li>
                 <li className="listy">Sel, poivre</li>
 			
 			</ul>

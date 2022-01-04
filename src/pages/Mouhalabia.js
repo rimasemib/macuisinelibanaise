@@ -6,6 +6,7 @@ import "./Mouhalabia.css";
 
 const Mouhalabia = () => {
 	const [compteurMouh, setCompteurMouh] = useState(0);
+	const [multiplePer, setMultiplePer] = useState(1);
    
   return (
     <div>
@@ -39,14 +40,44 @@ const Mouhalabia = () => {
 				<li className="listy">Temps total:25 minutes</li>
 			</ul>
 		</div>
+		<div className="compteur22">
+		 
+				<button className="btnHms"
+				onClick={() => {
+					setMultiplePer(1);
+		 
+		 		}}
+	   		>
+		 		4 Personnes
+	   		</button>
+			   
+			<button className="btnHms"
+				onClick={() => {
+					setMultiplePer(2);
+		 
+		 		}}
+	   		>
+		 		8 Personnes
+	   		</button>
+			   
+			<button className="btnHms"
+				onClick={() => {
+					setMultiplePer(3);
+		 
+		 		}}
+	   		>
+		 		12 Personnes
+	   		</button>
+	 	
+		</div>
 		<div className="recipe">
 			<h2>Les Ingrédients</h2>
 			<ul className="instructions">
-				<li className="listy">50 cl de lait</li>
-				<li className="listy">100 g de sucre</li>
-				<li className="listy">40 g de fécule de maïs</li>
-				<li className="listy">30 g de pistaches</li>
-				<li className="listy">6 cl d'eau de fleur d'oranger</li>
+				<li className="listy">{multiplePer * 50} cl de lait</li>
+				<li className="listy">{multiplePer * 100} g de sucre</li>
+				<li className="listy">{multiplePer * 40} g de fécule de maïs</li>
+				<li className="listy">{multiplePer * 30} g de pistaches</li>
+				<li className="listy">{multiplePer * 6} cl d'eau de fleur d'oranger</li>
             </ul>
 
 		</div>

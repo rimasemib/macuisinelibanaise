@@ -6,6 +6,7 @@ import "./Loubyi.css";
 
 const Loubyi = () => {
 	const [compteurLoubyi, setCompteurLoubyi] = useState(0);
+	const [multiplePer, setMultiplePer] = useState(1);
    
   return (
     <div>
@@ -39,16 +40,46 @@ const Loubyi = () => {
 				<li className="listy">Temps total:50 minutes</li>
 			</ul>
 		</div>
+		<div className="compteur22">
+		 
+				<button className="btnHms"
+				onClick={() => {
+					setMultiplePer(1);
+		 
+		 		}}
+	   		>
+		 		4 Personnes
+	   		</button>
+			   
+			<button className="btnHms"
+				onClick={() => {
+					setMultiplePer(2);
+		 
+		 		}}
+	   		>
+		 		8 Personnes
+	   		</button>
+			   
+			<button className="btnHms"
+				onClick={() => {
+					setMultiplePer(3);
+		 
+		 		}}
+	   		>
+		 		12 Personnes
+	   		</button>
+	 	
+		</div>
 		<div className="recipe">
 			<h2>Les Ingrédients</h2>
 			<ul className="instructions">
-				<li className="listy">Environ 500 g de haricots verts frais</li>
-				<li className="listy">300 g de cubes de bœuf</li>
-				<li className="listy">1 oignon moyen haché</li>
-				<li className="listy">1 gousse d’ail écrasée</li>
-				<li className="listy">1 boite de conserve de pâte de tomates (156 ml environ)</li>
-				<li className="listy">5-6 tasses d’eau</li>
-                <li className="listy">5 c. s. d’huile végétale</li>
+				<li className="listy">Environ {multiplePer * 500} g de haricots verts frais</li>
+				<li className="listy">{multiplePer * 300} g de cubes de bœuf</li>
+				<li className="listy">{multiplePer * 1} oignon moyen haché</li>
+				<li className="listy">{multiplePer * 1} gousse d’ail écrasée</li>
+				<li className="listy">{multiplePer * 1} boite de conserve de pâte de tomates (156 ml environ)</li>
+				<li className="listy">{multiplePer * 5.5} tasses d’eau</li>
+                <li className="listy">{multiplePer * 5} c. s. d’huile végétale</li>
                 <li className="listy">Sel et poivre</li>
             </ul>
 

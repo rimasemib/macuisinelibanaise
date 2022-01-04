@@ -6,6 +6,7 @@ import "./AishElSaraya.css";
 
 const AishElSaraya = () => {
 	const [compteurSaraya, setCompteurSaraya] = useState(0);
+	const [multiplePer, setMultiplePer] = useState(1);
    
   return (
     <div>
@@ -39,18 +40,48 @@ const AishElSaraya = () => {
 				<li className="listy">Temps total:30 minutes</li>
 			</ul>
 		</div>
+		<div className="compteur22">
+		 
+				<button className="btnHms"
+				onClick={() => {
+					setMultiplePer(0.5);
+		 
+		 		}}
+	   		>
+		 		5 Personnes
+	   		</button>
+			   
+			<button className="btnHms"
+				onClick={() => {
+					setMultiplePer(1);
+		 
+		 		}}
+	   		>
+		 		10 Personnes
+	   		</button>
+			   
+			<button className="btnHms"
+				onClick={() => {
+					setMultiplePer(1.5);
+		 
+		 		}}
+	   		>
+		 		15 Personnes
+	   		</button>
+	 	
+		</div>
 		<div className="recipe">
 			<h2>Les Ingrédients</h2>
 			<ul className="instructions">
-				<li className="listy">2 verres d'eau</li>
-				<li className="listy">1 verre de sucre</li>
-				<li className="listy">2 cas a soupe d'eau de rose</li>
-				<li className="listy">6 cuillères a soupe de maïzena</li>
-				<li className="listy">1 c.a.s de sucre</li>
-				<li className="listy">600 ml de lait</li>
-                <li className="listy">3 c.a.s de crème liquide</li>
-                <li className="listy">1 paquet de biscotte</li>
-                <li className="listy">1 sachet de sucre vanillé</li>
+				<li className="listy">{multiplePer * 2} verres d'eau</li>
+				<li className="listy">{multiplePer * 1} verre(s) de sucre</li>
+				<li className="listy">{multiplePer * 2} cas a soupe d'eau de rose</li>
+				<li className="listy">{multiplePer * 6} cuillères a soupe de maïzena</li>
+				<li className="listy">{multiplePer * 1} c.a.s de sucre</li>
+				<li className="listy">{multiplePer * 600} ml de lait</li>
+                <li className="listy">{multiplePer *3} c.a.s de crème liquide</li>
+                <li className="listy">{multiplePer * 1} paquet(s) de biscotte</li>
+                <li className="listy">{multiplePer * 1} sachet(s) de sucre vanillé</li>
                 <li className="listy">Pistache concassées ou noix de coco</li>
 			
 			</ul>

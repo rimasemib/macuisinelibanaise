@@ -6,6 +6,7 @@ import "./Tabbouli.css";
 
 const Tabbouli = () => {
 	const [compteurTbl, setCompteurTbl] = useState(0);
+	const [multiplePer, setMultiplePer] = useState(1);
    
   return (
     <div>
@@ -33,23 +34,53 @@ const Tabbouli = () => {
 
 		<div className="recipe">
 			<ul className="instructions">
-				<li className="listy">Portions: 5 personnes</li>
+				<li className="listy">Portions: 4 personnes</li>
 				<li className="listy">Préparation des légumes:20 minutes</li>
 				<li className="listy">Mélanger avec les autres ingrédients:5 minutes</li>
 				<li className="listy">Temps total:25 minutes</li>
 			</ul>
 		</div>
+		<div className="compteur22">
+		 
+				<button className="btnHms"
+				onClick={() => {
+					setMultiplePer(1);
+		 
+		 		}}
+	   		>
+		 		4 Personnes
+	   		</button>
+			   
+			<button className="btnHms"
+				onClick={() => {
+					setMultiplePer(2);
+		 
+		 		}}
+	   		>
+		 		8 Personnes
+	   		</button>
+			   
+			<button className="btnHms"
+				onClick={() => {
+					setMultiplePer(3);
+		 
+		 		}}
+	   		>
+		 		12 Personnes
+	   		</button>
+	 	
+		</div>
 		<div className="recipe">
 			<h2>Les Ingrédients</h2>
 			<ul className="instructions">
-				<li className="listy">4 tomates fermes</li>
-				<li className="listy">2 bottes de persil plat</li>
-				<li className="listy">1 citron(s)</li>
-				<li className="listy">3 cuillères d'huile d'olive</li>
-				<li className="listy">2 pincées de sel</li>
-				<li className="listy">1 botte d'oignon verts</li>
-                <li className="listy">1 botte de menthe fraîche</li>
-                <li className="listy">1 petite poignée de boulgour brun moyen (blé concassé)</li>
+				<li className="listy">{multiplePer * 4} tomates fermes</li>
+				<li className="listy">{multiplePer * 2} bottes de persil plat</li>
+				<li className="listy">{multiplePer * 1} citron(s)</li>
+				<li className="listy">{multiplePer * 3} cuillères d'huile d'olive</li>
+				<li className="listy">{multiplePer * 2} pincées de sel</li>
+				<li className="listy">{multiplePer * 1} botte(s) d'oignon verts</li>
+                <li className="listy">{multiplePer * 1} botte(s) de menthe fraîche</li>
+                <li className="listy">{multiplePer * 1} petite(s) poignée de boulgour brun moyen (blé concassé)</li>
 			
 			</ul>
 

@@ -5,7 +5,7 @@ import "./AishElSaraya.css";
 
 
 const AishElSaraya = () => {
-	const [compteurSaraya, setCompteurSaraya] = useState(0);
+	const [compteurSaraya, setCompteurSaraya] = useState();
 	const [multiplePer, setMultiplePer] = useState(1);
    
   return (
@@ -90,31 +90,30 @@ const AishElSaraya = () => {
 		<div className="compteurContainer">
      
 
-        {compteurSaraya < 445 ? (
+    
           <button className="btnAish"
             onClick={() => {
-              setCompteurSaraya(compteurSaraya + 445);
+              setCompteurSaraya(445);
 			
             }}
           >
             Combien de calories dans 100 g de Aish El Saraya?&nbsp;&nbsp;&nbsp;
           </button>
-        ) : null}
+       
 		
 
         <span className="calories"> &nbsp;&nbsp;&nbsp;{compteurSaraya} </span>
 		<span className="calories">&nbsp;&nbsp;&nbsp;kcal/100 g&nbsp;&nbsp;&nbsp;</span>
 
-        {compteurSaraya > 0 ? (
+
           <button className="btnAish"
             onClick={() => {
-              setCompteurSaraya(compteurSaraya - 445);
+              setCompteurSaraya();
             }}
           >
             reset
           </button>
-        ) : // comment
-        null}
+       
 	</div>
 
 		<div className="recipe">

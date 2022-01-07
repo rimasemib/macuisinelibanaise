@@ -5,7 +5,7 @@ import "./Loubyi.css";
 
 
 const Loubyi = () => {
-	const [compteurLoubyi, setCompteurLoubyi] = useState(0);
+	const [compteurLoubyi, setCompteurLoubyi] = useState();
 	const [multiplePer, setMultiplePer] = useState(1);
    
   return (
@@ -86,32 +86,25 @@ const Loubyi = () => {
 		</div>
 		<div className="compteurContainer">
      
-
-        {compteurLoubyi < 194 ? (
           <button className="btnLoub"
             onClick={() => {
-              setCompteurLoubyi(compteurLoubyi + 194);
+              setCompteurLoubyi(194);
 			
             }}
           >
             Combien de calories dans 100 g de Loubyi?&nbsp;&nbsp;&nbsp;
           </button>
-        ) : null}
-		
-
         <span className="calories"> &nbsp;&nbsp;&nbsp;{compteurLoubyi} </span>
 		<span className="calories">&nbsp;&nbsp;&nbsp;kcal/100 g&nbsp;&nbsp;&nbsp;</span>
 
-        {compteurLoubyi > 0 ? (
           <button className="btnLoub"
             onClick={() => {
-              setCompteurLoubyi(compteurLoubyi - 194);
+              setCompteurLoubyi();
             }}
           >
             reset
           </button>
-        ) : // comment
-        null}
+ 
 	</div>
 		<div className="recipe">
 			<h2>Instructions</h2>

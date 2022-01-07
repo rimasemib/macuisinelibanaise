@@ -5,7 +5,7 @@ import "./Mouhalabia.css";
 
 
 const Mouhalabia = () => {
-	const [compteurMouh, setCompteurMouh] = useState(0);
+	const [compteurMouh, setCompteurMouh] = useState();
 	const [multiplePer, setMultiplePer] = useState(1);
    
   return (
@@ -84,31 +84,29 @@ const Mouhalabia = () => {
 		<div className="compteurContainer">
      
 
-        {compteurMouh < 100 ? (
           <button className="btnMouh"
             onClick={() => {
-              setCompteurMouh(compteurMouh + 100);
+              setCompteurMouh(100);
 			
             }}
           >
             Combien de calories dans 100 g de Mouhalabiya?&nbsp;&nbsp;&nbsp;
           </button>
-        ) : null}
+
 		
 
         <span className="calories"> &nbsp;&nbsp;&nbsp;{compteurMouh} </span>
 		<span className="calories">&nbsp;&nbsp;&nbsp;kcal/100 g&nbsp;&nbsp;&nbsp;</span>
 
-        {compteurMouh > 0 ? (
+    
           <button className="btnMouh"
             onClick={() => {
-              setCompteurMouh(compteurMouh - 100);
+              setCompteurMouh();
             }}
           >
             reset
           </button>
-        ) : // comment
-        null}
+      
 	</div>
 		<div className="recipe">
 			<h2>Instructions</h2>

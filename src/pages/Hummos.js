@@ -5,7 +5,7 @@ import "./Hummos.css";
 
 
 const Hummos = () => {
-	const [compteurHms, setCompteurHms] = useState(0);
+	const [compteurHms, setCompteurHms] = useState();
 	const [multiplePer, setMultiplePer] = useState(1);
    
   return (
@@ -87,31 +87,30 @@ const Hummos = () => {
 		<div className="compteurContainer">
      
 
-        {compteurHms < 145 ? (
+       
           <button className="btnHms"
             onClick={() => {
-              setCompteurHms(compteurHms + 145);
+              setCompteurHms(145);
 			
             }}
           >
             Combien de calories dans 100 g de Hummos?&nbsp;&nbsp;&nbsp;
           </button>
-        ) : null}
+       
 		
 
         <span className="calories"> &nbsp;&nbsp;&nbsp;{compteurHms} </span>
 		<span className="calories">&nbsp;&nbsp;&nbsp;kcal/100 g&nbsp;&nbsp;&nbsp;</span>
 
-        {compteurHms > 0 ? (
+    
           <button className= "btnHms"
             onClick={() => {
-              setCompteurHms(compteurHms - 145);
+              setCompteurHms();
             }}
           >
             reset
           </button>
-        ) : // comment
-        null}
+      
 	</div>
 
 		<div className="recipe">

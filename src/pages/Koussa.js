@@ -5,7 +5,7 @@ import "./Koussa.css";
 
 
 const Koussa = () => {
-	const [compteurKoussa, setCompteurKoussa] = useState(0);
+	const [compteurKoussa, setCompteurKoussa] = useState();
 	const [multiplePer, setMultiplePer] = useState(1);
    
   return (
@@ -97,31 +97,26 @@ const Koussa = () => {
 		<div className="compteurContainer">
      
 
-        {compteurKoussa < 54 ? (
+    
           <button className="btnKous"
             onClick={() => {
-              setCompteurKoussa(compteurKoussa + 54);
+              setCompteurKoussa(54);
 			
             }}
           >
             Combien de calories dans 100 g de Koussa?&nbsp;&nbsp;&nbsp;
           </button>
-        ) : null}
-		
-
         <span className="calories"> &nbsp;&nbsp;&nbsp;{compteurKoussa} </span>
 		<span className="calories">&nbsp;&nbsp;&nbsp;kcal/100 g&nbsp;&nbsp;&nbsp;</span>
 
-        {compteurKoussa > 0 ? (
           <button className="btnKous"
             onClick={() => {
-              setCompteurKoussa(compteurKoussa - 54);
+              setCompteurKoussa();
             }}
           >
             reset
           </button>
-        ) : // comment
-        null}
+
 	</div>
 		<div className="recipe">
 			<h2>Instructions</h2>

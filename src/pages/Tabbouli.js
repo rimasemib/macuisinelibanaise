@@ -5,7 +5,7 @@ import "./Tabbouli.css";
 
 
 const Tabbouli = () => {
-	const [compteurTbl, setCompteurTbl] = useState(0);
+	const [compteurTbl, setCompteurTbl] = useState();
 	const [multiplePer, setMultiplePer] = useState(1);
    
   return (
@@ -30,8 +30,6 @@ const Tabbouli = () => {
 			</div>
 	</div>
 	
-	
-
 		<div className="recipe">
 			<ul className="instructions">
 				<li className="listy">Portions: 4 personnes</li>
@@ -86,33 +84,26 @@ const Tabbouli = () => {
 
 		</div>
 		<div className="compteurContainer">
-     
-
-        {compteurTbl < 115 ? (
+    
           <button className="btnTab"
             onClick={() => {
-              setCompteurTbl(compteurTbl + 115);
+              setCompteurTbl(115);
 			
             }}
           >
             Combien de calories dans 100 g de Tabbouli?&nbsp;&nbsp;&nbsp;
           </button>
-        ) : null}
-		
-
         <span className="calories"> &nbsp;&nbsp;&nbsp;{compteurTbl} </span>
 		<span className="calories">&nbsp;&nbsp;&nbsp;kcal/100 g&nbsp;&nbsp;&nbsp;</span>
 
-        {compteurTbl > 0 ? (
           <button className="btnTab"
             onClick={() => {
-              setCompteurTbl(compteurTbl - 115);
+              setCompteurTbl();
             }}
           >
             reset
           </button>
-        ) : // comment
-        null}
+
 	</div>
 		<div className="recipe">
 			<h2>Instructions</h2>
